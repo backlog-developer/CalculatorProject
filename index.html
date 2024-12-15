@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="calculator border rounded p-3">
+                    <div id="display" class="form-control text-end mb-3" readonly></div>
+                    <div class="row">
+                        <button class="btn btn-secondary col-3" onclick="clearDisplay()">AC</button>
+                        <button class="btn btn-secondary col-3" onclick="append('%')">%</button>
+                        <button class="btn btn-secondary col-3" onclick="square()">x²</button>
+                        <button class="btn btn-primary col-3" onclick="append('/')">/</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button class="btn btn-light col-3" onclick="append('7')">7</button>
+                        <button class="btn btn-light col-3" onclick="append('8')">8</button>
+                        <button class="btn btn-light col-3" onclick="append('9')">9</button>
+                        <button class="btn btn-primary col-3" onclick="append('*')">*</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button class="btn btn-light col-3" onclick="append('4')">4</button>
+                        <button class="btn btn-light col-3" onclick="append('5')">5</button>
+                        <button class="btn btn-light col-3" onclick="append('6')">6</button>
+                        <button class="btn btn-primary col-3" onclick="append('-')">-</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button class="btn btn-light col-3" onclick="append('1')">1</button>
+                        <button class="btn btn-light col-3" onclick="append('2')">2</button>
+                        <button class="btn btn-light col-3" onclick="append('3')">3</button>
+                        <button class="btn btn-primary col-3" onclick="append('+')">+</button>
+                    </div>
+                    <div class="row mt-2">
+                        <button class="btn btn-light col-6" onclick="append('0')">0</button>
+                        <button class="btn btn-light col-3" onclick="append('.')">.</button>
+                        <button class="btn btn-success col-3" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
